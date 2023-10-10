@@ -1,0 +1,61 @@
+<htm>
+
+    <head>
+        <title>Assignment - 01</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            
+            body {
+                display: grid;
+                grid-template-areas: "header header header" "nav article ads" "nav footer footer";
+                grid-template-rows: 10vh 80vh 10vh;
+                grid-template-columns: 20% 60% 20%;
+                height: 90vh;
+                grid-gap: 10px;
+                text-align: center;
+                overflow: hidden;
+            }
+            
+            header,
+            nav,
+            footer,
+            article,
+            aside {
+                background-color: yellow;
+            }
+            
+            #pageHeader {
+                grid-area: header;
+            }
+            
+            #pageNav {
+                grid-area: nav;
+            }
+            
+            #pageArticle {
+                grid-area: article;
+            }
+            
+            #pageAds {
+                grid-area: aside;
+            }
+            
+            #pageFooter {
+                grid-area: footer;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header id="pageHeader">Header</header>
+        <nav id="pageNav">Nav</nav>
+        <article id="pageArticle">Article</article>
+        <aside id="">Ads</aside>
+        <footer id="pageFooter">Footer</footer>
+    </body>
+
+</htm>

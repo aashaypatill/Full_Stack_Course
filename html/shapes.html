@@ -1,0 +1,78 @@
+<html>
+
+    <head>
+        <style>
+            * {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            
+            .square {
+                width: 200px;
+                height: 200px;
+                background-color: red;
+            }
+            
+            .circle {
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                background-color: yellow;
+            }
+            
+            .border {
+                width: 200px;
+                height: 200px;
+                border-top: 10px solid rgb(255, 0, 119);
+                border-left: 10px solid rgb(16, 223, 30);
+                border-right: 10px solid rgb(21, 0, 255);
+                border-bottom: 10px solid rgb(255, 89, 0);
+            }
+            
+            .tringle {
+                width: 0;
+                height: 0;
+                border-left: 100px solid transparent;
+                border-right: 100px solid transparent;
+                border-bottom: 200px solid rgb(119, 165, 213);
+            }
+            
+            .rotated-tringle {
+                width: 0;
+                height: 0;
+                border-left: 100px solid transparent;
+                border-right: 100px solid transparent;
+                border-bottom: 200px solid rgb(119, 165, 213);
+                transform: rotate(45deg);
+                margin-left: 80px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>
+            <h1>Sruare</h1>
+            <div class="Square"></div>
+        </div>
+        <nav>
+            <div>
+                <h1>circle</h1>
+                <div class="circle"></div>
+            </div>
+        </nav>
+
+        <div>
+            <h1>border</h1>
+            <div class="border"></div>
+        </div>
+
+        <div>
+            <h1>tringle</h1>
+            <div class="tringle"></div>
+        </div>
+        <div>
+            <h1>rotated tringle</h1>
+            <div class="rotated-tringle"></div>
+        </div>
+
+    </body>
+</html>
