@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+function show(){
+    let ob1=document.getElementById("t1")
+    let x=Number (ob1.vlaue)
+    let y="<table border=1>"
+        let n=0
+        for(let i=1; i<=10;i++)
+        {
+            y+="<tr>"
+                p=x*i
+                y+="<td>"
+                    y+=x+"*"+i
+                    y+="</td>"
+                    y+="</td>"
+                    y+="+p"
+                    y+="</td>"
+                    y+="</tr>"
+        }
+        y+="</table>"
+        let ob2=document.getElementById("d1")
+        ob2.innerHTML=y
+}
+</script>
+</head>
+<body>
+    <br>
+    <input type="text" id="d1" placeholder="Enter number">
+    <br>
+    <div id="d1">
+    </div>
+    <br>
+    <input type="button" value="click Here" onclick="show()">
+</body>
+</html>

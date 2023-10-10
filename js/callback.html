@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback function</title>
+    <script>
+        function ask(question,ok,cancel){
+            let r =confirm(question)
+            if(r){
+                ok()
+            }
+            else{
+                cancel()
+            }
+        }
+        function show(){
+            let ok=function(){
+                alert("ok1")
+            }
+            let cancel=function(){
+                alert("cancel")
+            }
+            ask(" Do you want to exit",ok,cancel)
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="click here" onclick="show()">
+</body>
+</html>
